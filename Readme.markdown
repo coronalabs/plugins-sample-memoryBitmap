@@ -30,6 +30,6 @@ Code is shared among all platforms and is in `shared/` directory
 
 * [CoronaGraphics](https://docs.coronalabs.com/daily/native/C/CoronaGraphics.html) - library to used to push textures into corona
 * [TextureResourceExternal](https://docs.coronalabs.com/daily/api/type/TextureResourceExternal/index.html) - texture type produced by plugins
-* [Memory bitmap](https://marketplace.coronalabs.com/plugin/memory-bitmap) plugin on Corona Marketplace
+* This plugin on [Corona Marketplace](https://marketplace.coronalabs.com/plugin/memory-bitmap)
 * Plugin [documentation](https://docs.coronalabs.com/daily/plugin/memoryBitmap/index.html)
 
