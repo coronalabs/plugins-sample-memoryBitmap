@@ -1,0 +1,19 @@
+syntax: glob
+.hgignore
+.hg
+*.so
+android/obj
+android/libs
+ios/build
+ios/libplugin_*.a
+tvos/build
+mac/build
+mac/plugin_*.dylib
+win32/CoronaEnterprise
+win32/Debug
+win32/Release
+*.suo
+*.sdf
+*.user
+*xcuser*
+deploy_all.sh
