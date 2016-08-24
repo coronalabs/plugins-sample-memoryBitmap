@@ -25,3 +25,11 @@ tex:releaseSelf()
 ```
 
 Code is shared among all platforms and is in `shared/` directory
+
+## Links
+
+* [CoronaGraphics](https://docs.coronalabs.com/daily/native/C/CoronaGraphics.html) - library to used to push textures into corona
+* [TextureResourceExternal](https://docs.coronalabs.com/daily/api/type/TextureResourceExternal/index.html) - texture type produced by plugins
+* [Memory bitmap](https://marketplace.coronalabs.com/plugin/memory-bitmap) plugin on Corona Marketplace
+* Plugin [documentation](https://docs.coronalabs.com/daily/plugin/memoryBitmap/index.html)
+
