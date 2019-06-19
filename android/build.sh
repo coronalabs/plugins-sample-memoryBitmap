@@ -59,13 +59,8 @@ then
 	FLAGS="$FLAGS NDK_DEBUG=1"
 fi
 
-# Copy .so files
-LIBS_SRC_DIR=/Applications/CoronaEnterprise/Corona/android/lib/Corona/libs/armeabi-v7a
-LIBS_DST_DIR=$path
-mkdir -p "$LIBS_DST_DIR"
+unzip -u /Applications/CoronaEnterprise/Corona/android/lib/gradle/Corona.aar "*.so" -d "$path/corona-libs"
 
-cp -v "$LIBS_SRC_DIR"/liblua.so "$LIBS_DST_DIR"
-cp -v "$LIBS_SRC_DIR"/libcorona.so "$LIBS_DST_DIR"
 
 if [ -z "$CFLAGS" ]
 then
@@ -82,7 +77,7 @@ else
 	$ANDROID_NDK/ndk-build $FLAGS V=1 MY_CFLAGS="$CFLAGS" APP_OPTIM=$OPTIM_FLAGS
 fi
 
-cp -v ../metadata.lua $path/libs/armeabi-v7a
+find "$path/libs" \( -name liblua.so -or -name libcorona.so \)  -delete
 
 popd > /dev/null
 

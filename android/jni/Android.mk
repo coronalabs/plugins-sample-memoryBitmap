@@ -18,13 +18,13 @@ SRC_DIR := $(PLUGIN_DIR)/shared
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := liblua
-LOCAL_SRC_FILES := ../liblua.so
+LOCAL_SRC_FILES := ../corona-libs/jni/$(TARGET_ARCH_ABI)/liblua.so
 LOCAL_EXPORT_C_INCLUDES := $(LUA_API_DIR)
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libcorona
-LOCAL_SRC_FILES := ../libcorona.so
+LOCAL_SRC_FILES := ../corona-libs/jni/$(TARGET_ARCH_ABI)/libcorona.so
 LOCAL_EXPORT_C_INCLUDES := $(LUA_API_CORONA)
 include $(PREBUILT_SHARED_LIBRARY)
 
